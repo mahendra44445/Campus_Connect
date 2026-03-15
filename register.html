@@ -16,7 +16,7 @@
 <input type="email" placeholder="Email"><br>
 <input type="password" placeholder="Create Password"><br>
 
-<button>Register</button>
+<button onclick="register()">Register</button>
 
 <p>
 Already have an account? <a href="index.html">Login here</a>
@@ -25,4 +25,25 @@ Already have an account? <a href="index.html">Login here</a>
 </div>
 
 </body>
+<script>
+
+function register(){
+
+let name = document.getElementById("name").value;
+let userid = document.getElementById("userid").value;
+let email = document.getElementById("email").value;
+let password = document.getElementById("password").value;
+
+if(name=="" || userid=="" || email=="" || password==""){
+alert("Please fill all fields");
+return;
+}
+
+alert("Registration Successful!");
+
+window.location = "index.html";
+
+}
+
+</script>
 </html>

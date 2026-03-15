@@ -166,3 +166,48 @@ border-radius:50%;
 object-fit:cover;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
+.login-body{
+background:#f4f6f9;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial;
+}
+
+.login-box{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+text-align:center;
+width:300px;
+}
+
+.login-box input{
+width:90%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.login-box button{
+background:#4facfe;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.welcome-msg{
+font-size:14px;
+color:#555;
+margin-bottom:15px;
+}
+
+.register-link{
+margin-top:10px;
+font-size:14px;
+}

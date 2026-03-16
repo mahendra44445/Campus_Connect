@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Assignments</title>
+<title>Assignments - Campus Connect</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.assignments-container{
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.assignment-card{
+background:linear-gradient(135deg,#6a11cb,#2575fc);
+color:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.assignment-card:hover{
+transform:scale(1.05);
+}
+
+.assignment-btn{
+margin-top:10px;
+background:white;
+color:#2575fc;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+</style>
+
 </head>
 
 <body>
 
-<h2>Assignments</h2>
+<h1 style="padding:20px;">Assignments</h1>
 
-<ul>
-<li>Math Assignment - Due Monday</li>
-<li>Programming Lab - Due Wednesday</li>
-<li>Project Report - Due Friday</li>
-</ul>
+<div class="assignments-container">
 
-<a href="dashboard.html">Back</a>
+<div class="assignment-card">
+<h3>Data Structures Assignment</h3>
+<p>Submit before: 25 March</p>
+<button class="assignment-btn">Submit</button>
+</div>
+
+<div class="assignment-card">
+<h3>Web Development Project</h3>
+<p>Submit before: 28 March</p>
+<button class="assignment-btn">Submit</button>
+</div>
+
+<div class="assignment-card">
+<h3>React Mini Project</h3>
+<p>Submit before: 2 April</p>
+<button class="assignment-btn">Submit</button>
+</div>
+
+<div class="assignment-card">
+<h3>Database Assignment</h3>
+<p>Submit before: 5 April</p>
+<button class="assignment-btn">Submit</button>
+</div>
+
+</div>
 
 </body>
 </html>
